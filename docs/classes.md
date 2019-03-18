@@ -1,10 +1,10 @@
-### Classes
-The reason why it's important to have classes in JavaScript as a first class item is that:
-1. [Classes offer a useful structural abstraction](./tips/classesAreUseful.md)
-1. Provides a consistent way for developers to use classes instead of every framework (emberjs,reactjs etc) coming up with their own version.
-1. Object Oriented Developers already understand classes.
+### Kelas-kelas
+Alasan mengapa penting untuk memilki kelas dalam JavaScript sebagai item kelas pertama adalah:
+1. [Kelas menawarkan abstraksi struktural yang berguna](./tips/classesAreUseful.md)
+1. Menyediakan cara yang konsisten bagi pengembang untuk menggunakan kelas seperti framework (emberjs, reactjs dll) datang dengan versi mereka sendiri.
+1. Pengembang-pengembang Object Oriented telah memahami kelas.
 
-Finally JavaScript developers can *have `class`*. Here we have a basic class called Point:
+Akhirnya pengembangan JavaScript dapat *memiliki `class`*. Di sini kita memiliki kelas dasar yang disebut Point:
 ```ts
 class Point {
     x: number;
@@ -22,7 +22,7 @@ var p1 = new Point(0, 10);
 var p2 = new Point(10, 20);
 var p3 = p1.add(p2); // {x:10,y:30}
 ```
-This class generates the following JavaScript on ES5 emit:
+Kelas ini menghasilkan JavaScript berikut pada ES5 emit:
 ```ts
 var Point = (function () {
     function Point(x, y) {
@@ -35,10 +35,11 @@ var Point = (function () {
     return Point;
 })();
 ```
-This is a fairly idiomatic traditional JavaScript class pattern now as a first class language construct.
+Ini adalah pola kelas JavaScript tradisional yang cukup idiomatik sekarang sebagai konstruksi bahasa kelas satu.
+ 
 
 ### Inheritance
-Classes in TypeScript (like other languages) support *single* inheritance using the `extends` keyword as shown below:
+Kelas dalam TypeScript (seperti bahasa yang lain) mendukung *single* inheritance menggunakan perintah `extends` seperti yang ditunjukan di bawah ini:
 
 ```ts
 class Point3D extends Point {
@@ -53,12 +54,12 @@ class Point3D extends Point {
     }
 }
 ```
-If you have a constructor in your class then you *must* call the parent constructor from your constructor (TypeScript will point this out to you). This ensures that the stuff that it needs to set on `this` gets set. Followed by the call to `super` you can add any additional stuff you want to do in your constructor (here we add another member `z`).
+Jika Anda memiliki konstruktor di kelas Anda maka Anda *harus* memanggil konstruktor induk dari konstruktor Anda (TypeScript akan menunjukan ini kepada Anda). Ini memastikan bahwa hal-hal yang perlu diatur pada gets set `ini`.   'If you have a constructor in your class then you *must* call the parent constructor from your constructor (TypeScript will point this out to you). This ensures that the stuff that it needs to set on `this` gets set. Diikuti oleh panggilan ke `super` Anda dapat menambahkan hal-hal tambahan yang ingin Anda lakukan di konstruktor Anda (di sini kami menambahkan anggota lain yaitu `z`).
 
-Note that you override parent member functions easily (here we override `add`) and still use the functionality of the super class in your members (using `super.` syntax).
+Perhatikan bahwa Anda menimpa fungsi anggota orang tua dengan mudah (di sini kita menimpa `add`) dan masih menggunakan fungsionalitas kelas super di anggota Anda (menggunakan syntax `super.` ).
 
 ### Statics
-TypeScript classes support `static` properties that are shared by all instances of the class. A natural place to put (and access) them is on the class itself and that is what TypeScript does:
+Kelas-kelas TypeScript mendukung properti `static` yang dibagikan oleh semua instance kelas. properties that are shared by all instances of the class. A natural place to put (and access) them is on the class itself and that is what TypeScript does:
 
 ```ts
 class Something {
@@ -76,7 +77,7 @@ console.log(Something.instances); // 2
 You can have static members as well as static functions.
 
 ### Access Modifiers
-TypeScript supports access modifiers `public`,`private` and `protected` which determine the accessibility of a `class` member as shown below:
+TypeScript mendukung access modifiers `public`,`private` and `protected` yang menentukan aksesibilitas anggota `class` seperti yang ditunjukkan di bawah ini:
 
 | accessible on   | `public` | `protected` | `private` |
 |-----------------|----------|-------------|-----------|
