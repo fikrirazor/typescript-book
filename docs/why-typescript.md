@@ -1,9 +1,9 @@
-# Why TypeScript
-There are two main goals of TypeScript:
-* Provide an *optional type system* for JavaScript.
-* Provide planned features from future JavaScript editions to current JavaScript engines
+# Mengapa TypeScript
+Ada dua tujuan utama dari TypeScript:
+* Menyediakan *optional type system* untuk JavaScript.
+* Menyediakan fitur-fitur yang direncanakan dari edisi JavaScript yang akan datang ke mesin JavaScript saat ini
 
-The desire for these goals is motivated below.
+Keinginan untuk tujuan-tujuan ini termotivasi di bawah ini.
 
 ## The TypeScript type system
 
