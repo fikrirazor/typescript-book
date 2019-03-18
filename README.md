@@ -33,7 +33,7 @@ Saya telah melihat masalah yang muncul secara umum ketika orang mulai menggunaka
 * Ini manis! Begitu banyak barang #typescript! [tautan](https://twitter.com/pauliescanlon/status/989898852474998784)
 
 ## Memulai
-Jika Anda di sini untuk membaca buku online, [memulailah](http://basarat.gitbooks.io/typescript/content/docs/getting-started.html).
+Jika Anda di sini untuk membaca buku online, [mulai](http://basarat.gitbooks.io/typescript/content/docs/getting-started.html).
 
 ## Terjemahan
 Buku ini sepenuhnya gratis sehingga Anda dapat menyalin tempel apa pun yang Anda inginkan tanpa memerlukan izin. Jika Anda memiliki terjemahan, Anda ingin saya tautkan di sini. [Kirim PR] (https://github.com/basarat/typescript-book/edit/master/README.md).
